@@ -1,3 +1,5 @@
+package com.example.cartodevisita
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,7 +17,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.cartodevisita.R
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,7 +44,7 @@ fun ContactCard() {
         )
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = "Alexandrão",
+            text = "Lucas Trindade",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.Black
@@ -63,8 +64,8 @@ fun ContactCard() {
 fun ContactInfo() {
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
         ContactRow(iconId = R.drawable.ic_phone, text = "+11 (123) 444 555 666")
-        ContactRow(iconId = R.drawable.ic_share, text = "@AlexandreDev")
-        ContactRow(iconId = R.drawable.ic_email, text = "Ale.xandão@gmail.com")
+        ContactRow(iconId = R.drawable.ic_share, text = "@LucasDev")
+        ContactRow(iconId = R.drawable.ic_email, text = "lucas.16@gmail.com")
     }
 }
 
